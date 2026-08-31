@@ -19,9 +19,26 @@ export class EnvConfigService {
     return this.configService.get<string>('DATABASE_URL', '');
   }
 
+  // Load CA certificate from env or local file
   getDatabaseCaCert(): string | undefined {
-    const certEnv = this.configService.get<string>('DB_CA_CERT');
-    if (certEnv) return certEnv;
+    let cert =
+      this.configService.get<string>('DATABASE_CA_CERT') ||
+      this.configService.get<string>('DB_CA_CERT');
+
+    if (cert) {
+      if (!cert.includes('-----BEGIN CERTIFICATE-----')) {
+        try {
+          const decoded = Buffer.from(cert, 'base64').toString('utf8');
+          if (decoded.includes('-----BEGIN CERTIFICATE-----')) {
+            cert = decoded;
+          }
+        } catch {
+          // Keep raw string if decode fails
+        }
+      }
+      return cert.replace(/\\n/g, '\n');
+    }
+
     const certPath = path.resolve(process.cwd(), 'ca.pem');
     if (fs.existsSync(certPath)) {
       return fs.readFileSync(certPath, 'utf8');
