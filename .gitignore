@@ -1,0 +1,74 @@
+# Compiled Output & Dependencies
+/dist
+/build
+/node_modules
+*.tsbuildinfo
+.turbo
+.npm
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS Specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Test & Coverage Output
+/coverage
+/.nyc_output
+
+# IDEs & Text Editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.gemini/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+
+# Certificates & Keys
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Database & Local Dumps
+*.sql
+*.sqlite
+*.db
+*.dump
+
+# Temporary Files & Runtimes
+.temp
+.tmp
+pids
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
