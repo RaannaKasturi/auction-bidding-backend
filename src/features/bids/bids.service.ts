@@ -13,9 +13,9 @@ import { Auction } from '../auctions/entities/auction.entity.js';
 import { CreateBidDto } from './dto/create-bid.dto.js';
 import { BidResponseDto } from './dto/bid-response.dto.js';
 import { BidStatus } from './enums/bid-status.enum.js';
-import { PaginationDto } from '../common/dto/pagination.dto.js';
-import { IdempotencyService } from '../utils/idempotency/idempotency.service.js';
-import { REDIS_CLIENT } from '../config/cache-config/cache-config.module.js';
+import { PaginationDto } from '../../common/dto/pagination.dto.js';
+import { IdempotencyService } from '../../utils/idempotency/idempotency.service.js';
+import { REDIS_CLIENT } from '../../config/cache-config/cache-config.module.js';
 
 // Atomic Redis Lua script with 750ms buffer & anti-sniping
 const BID_LUA_SCRIPT = `

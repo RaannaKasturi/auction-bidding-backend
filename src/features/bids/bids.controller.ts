@@ -19,7 +19,7 @@ import { BidsService } from './bids.service.js';
 import { CreateBidDto } from './dto/create-bid.dto.js';
 import { BidResponseDto } from './dto/bid-response.dto.js';
 import { Bid } from './entities/bid.entity.js';
-import { PaginationDto } from '../common/dto/pagination.dto.js';
+import { PaginationDto } from '../../common/dto/pagination.dto.js';
 import { CurrentUser } from '../auth/decorators/current-user.decorator.js';
 import { Public } from '../auth/decorators/public.decorator.js';
 

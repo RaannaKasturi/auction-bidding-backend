@@ -9,7 +9,7 @@ import { AuthController } from './auth.controller.js';
 import { JwtStrategy } from './strategies/jwt.strategy.js';
 import { JwtAuthGuard } from './guards/jwt-auth.guard.js';
 import { RolesGuard } from './guards/roles.guard.js';
-import { EnvConfigService } from '../config/env-config/env-config.service.js';
+import { EnvConfigService } from '../../config/env-config/env-config.service.js';
 
 @Module({
   imports: [

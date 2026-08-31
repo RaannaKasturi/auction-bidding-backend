@@ -25,7 +25,7 @@ import { UserResponseDto } from '../auth/dto/user-response.dto.js';
 import { MessageResponseDto } from '../auth/dto/message-response.dto.js';
 import { Bid } from '../bids/entities/bid.entity.js';
 import { AuctionResponseDto } from '../auctions/dto/auction-response.dto.js';
-import { PaginationDto } from '../common/dto/pagination.dto.js';
+import { PaginationDto } from '../../common/dto/pagination.dto.js';
 import { CurrentUser } from '../auth/decorators/current-user.decorator.js';
 import { Roles } from '../auth/decorators/roles.decorator.js';
 import { UserRole } from './enums/user-role.enum.js';

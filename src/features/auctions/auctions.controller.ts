@@ -22,7 +22,7 @@ import { UpdateAuctionDto } from './dto/update-auction.dto.js';
 import { AuctionStatus } from './enums/auction-status.enum.js';
 import { AuctionResponseDto } from './dto/auction-response.dto.js';
 import { DeleteAuctionResponseDto } from './dto/delete-auction-response.dto.js';
-import { PaginationDto } from '../common/dto/pagination.dto.js';
+import { PaginationDto } from '../../common/dto/pagination.dto.js';
 import { Public } from '../auth/decorators/public.decorator.js';
 import { Roles } from '../auth/decorators/roles.decorator.js';
 import { UserRole } from '../users/enums/user-role.enum.js';

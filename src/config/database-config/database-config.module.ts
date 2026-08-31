@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import * as pg from 'pg';
 import { EnvConfigService } from '../env-config/env-config.service.js';
 
 @Module({
@@ -17,6 +18,7 @@ import { EnvConfigService } from '../env-config/env-config.service.js';
 
         return {
           type: 'postgres',
+          driver: pg,
           host: dbUrl.hostname,
           port: Number(dbUrl.port) || 5432,
           username: decodeURIComponent(dbUrl.username),

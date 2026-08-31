@@ -10,8 +10,8 @@ import { CreateAuctionDto } from './dto/create-auction.dto.js';
 import { UpdateAuctionDto } from './dto/update-auction.dto.js';
 import { AuctionStatus } from './enums/auction-status.enum.js';
 import { DeleteAuctionResponseDto } from './dto/delete-auction-response.dto.js';
-import { PaginationDto } from '../common/dto/pagination.dto.js';
-import { REDIS_CLIENT } from '../config/cache-config/cache-config.module.js';
+import { PaginationDto } from '../../common/dto/pagination.dto.js';
+import { REDIS_CLIENT } from '../../config/cache-config/cache-config.module.js';
 
 @Injectable()
 export class AuctionsService {

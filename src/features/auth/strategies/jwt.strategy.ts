@@ -1,7 +1,7 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
-import { EnvConfigService } from '../../config/env-config/env-config.service.js';
+import { EnvConfigService } from '../../../config/env-config/env-config.service.js';
 import { UserRole } from '../../users/enums/user-role.enum.js';
 
 export interface JwtPayload {
