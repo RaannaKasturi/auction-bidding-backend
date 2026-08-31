@@ -2,6 +2,8 @@
 
 A production-grade, distributed auction bidding backend built with **NestJS**, **Fastify**, **PostgreSQL**, and **Redis**. Engineered for sub-millisecond atomic bid execution under thousands of concurrent bids per second while guaranteeing data consistency, idempotency, anti-sniping protection, and normalized schema persistence.
 
+**Hosted URL**: [https://api.pandrillalabs.com/auction/api/docs](https://api.pandrillalabs.com/auction/api/docs)
+
 ---
 
 ## Key Architectural Features
